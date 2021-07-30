@@ -1,5 +1,4 @@
 @extends('Front.Layout.master')
-@include('Front.Widgets.nav')
 @section('content')
 <div id="page-content">
 
@@ -17,7 +16,7 @@
             </h1>
         </div>
     </div>
-    <div class="container-fluid contact-links">
+    <div class="container-fluid contact-links" id="content">
         <div class="row">
             <div class="contact-link">
                 <img src="/front/images/Location.png" alt="">
@@ -46,23 +45,23 @@
                 <div class="detail-card">
                     <ul>
                         <li class="detail-link">
-                            <a href=""> <img src="/front/images/phone.svg" alt=""> +994
+                            <a href="tel:+994707004444"> <img src="/front/images/phone.svg" alt=""> +994
                                 (70) 700 44 44</a>
                         </li>
                         <li class="detail-link">
-                             <a href=""><img src="/front/images/phone.svg" alt=""> +994
-                                (70) 700 44 44</a>
+                             <a href="tel:+994702464601"><img src="/front/images/phone.svg" alt=""> +994
+                                (70) 246 46 01</a>
                         </li>
                         <li class="detail-link">
-                             <a href=""><img src="/front/images/phone.svg" alt=""> +994
-                                (70) 700 44 44</a>
+                             <a href="tel:+9942114600"><img src="/front/images/phone.svg" alt=""> +994
+                                (77) 211 46 00</a>
                         </li>
                         <li class="detail-link">
-                           <a href=""> <img src="/front/images/phone.svg" alt=""> +994
-                                (70) 700 44 44</a>
+                           <a href="tel:+994125113244"> <img src="/front/images/phone.svg" alt=""> +994
+                                (12) 511 32 44</a>
                         </li>
                         <li class="detail-link">
-                           <a href=""> <img src="/front/images/mail.svg" alt=""> info@ramservis.az</a>
+                           <a href="mailto:info@ramservis.az"> <img src="/front/images/mail.svg" alt=""> info@ramservis.az</a>
                         </li>
                         <li class="detail-link">
                             <a
@@ -73,7 +72,10 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <img src="/front/images/mep.png" alt="">
+                <div id="map"></div>
+
+                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+             
             </div>
         </div>
     </div>
@@ -87,46 +89,15 @@
                 </h1>
             </div>
             <div class="row">
-                <div class="location-card">
-                    <img src="/front/images/locationicon.png" alt="">
-                    <p class="text">
-                        Main office
-                    </p>
-                </div>
-                <div class="location-card">
-                    <img src="/front/images/locationicon.png" alt="">
-                    <p class="text">
-                        Heydar Aliyev International Airport
-                    </p>
-                </div>
-                <div class="location-card">
-                    <img src="/front/images/locationicon.png" alt="">
-                    <p class="text">
-                        Gyandzha Airport
-                    </p>
-                </div>
-                <div class="location-card">
-                    <img src="/front/images/locationicon.png" alt="">
-                    <p class="text">
-                        Gabala <br> International Airport
-                    </p>
-                </div>
-                <div class="location-card">
-                    <img src="/front/images/locationicon.png" alt="">
-                    <p class="text">
-                        Quba city
-                    </p>
-                </div>
-                <div class="location-card">
-                    <img src="/front/images/locationicon.png" alt="">
-                    <p class="text">
-                        Quba city
-                    </p>
-                </div>
+                @include('Front.Widgets.locations')
             </div>
 
         </div>
         <div class="divider-md"></div>
     </div>
 </div>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA55EEdP2LBarkvDexD4XNWsyOrl4yXHE0&callback=initMap&libraries=&v=weekly"
+async
+></script>
 @endsection

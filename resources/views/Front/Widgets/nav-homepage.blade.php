@@ -1,6 +1,10 @@
-<body>
-       
+@php
+     use App\Http\Controllers\Front\PagesController;
+@endphp
+<body style="padding-right: 0px !important">
+           
     <header class="home">
+    
         <!--Navbar-->
         <nav id="header" class="navbar navbar-dark indigo darken-2 stroke">
             <!-- Navbar brand -->
@@ -21,11 +25,11 @@
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse"
                 id="navbarSupportedContent22">
-
+                <img src="/front/images/logo.svg" class="logoforbg" alt="">
                 <!-- Links -->
                 <ul class="navbar-nav mr-auto">
                     <div class="lang-logo">
-                        <a class="navbar-brand" href="/"><img
+                        <a class="navbar-brand" href="/{{App::getLocale()}}/{{PagesController::getLink(1)}}"><img
                                 src="/front/images/logo.png" class="img-responsive"
                                 style="filter:
                                 invert(1) brightness(8);"></a>

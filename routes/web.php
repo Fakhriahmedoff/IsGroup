@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\PagesController;
+use App\Http\Controllers\OrdersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +13,8 @@ use App\Http\Controllers\Front\PagesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/getlocations',[PagesController::class,'Locations'] )->name("Locations");
+
 Route::get('/', function () {
     return redirect('/en/main-page');
 });
@@ -20,6 +23,14 @@ Route::get('/{locale}/lang', function ($locale) {
     Session::put('locale', $locale);
     return redirect()->back();
 });
+
+Route::post('/payment',[OrdersController::class,'postOrder'] )->name("payment");
+Route::get('/getcardata',[OrdersController::class,'getCarData'] )->name("getCarData");
+Route::get('/getbycategory',[OrdersController::class,'getCarByCategory'] )->name("getCarByCategory");
+Route::get('/getcar',[OrdersController::class,'getCar'] )->name("getCar");
+// Route::get('/{slug}',[PagesController::class,'getPage'] )->name("getPagess");
+
+
 
 $lang = Request::segment(1);
 if($lang == 'az'){
@@ -54,5 +65,6 @@ Route::group(
 }
 
 Route::group(['prefix' => 'admin'], function () {
+    Route::get('shifarishler', [OrdersController::class,'getOrders'])->name('getorders');
     Voyager::routes();
 });
