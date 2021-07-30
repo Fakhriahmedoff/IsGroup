@@ -7,7 +7,11 @@
 <div id="page-content">
 
 @include('Front.Widgets.classes')
+<<<<<<< HEAD
 <div id="content"  class="divider-sm"></div>
+=======
+<div class="divider-sm"></div>
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
 <div class="container cars-list mb-4">
     <div  class="row site-breadcrumbs justify-content-flex-start " >
            @include('Front.Widgets.breadcrumb')
@@ -56,6 +60,7 @@
     <div class="row" >
         @foreach ($cars as $car)
 
+<<<<<<< HEAD
         <div class="product-cardbox"  data-aos="fade-up" data-aos-delay="{{$loop->iteration  * 50}}">
             <span class="badge badge-secondary mybadge">
             @if($car->class == "business")
@@ -74,6 +79,10 @@
         </span>
             <a href="/{{App::getLocale()}}/{{$carseo}}/{{$car->slug}}" >
                 <div class="image" style="background-image: url('{{Voyager::image($car->thumbnail)}}')">
+=======
+        <div class="product-cardbox">
+            <div class="image" style="background-image: url('{{Voyager::image($car->thumbnail)}}')">
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
          
             </div>
         </a>

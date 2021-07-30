@@ -1,5 +1,6 @@
 @foreach ($premium as $pre)
 <li class="splide__slide">
+<<<<<<< HEAD
     <div class="product-cardbox" data-aos="fade-right">
         <span class="badge badge-secondary mybadge">
             @if($pre->class == "business")
@@ -24,6 +25,15 @@
                 <a href="/{{App::getLocale()}}/{{$carseo}}/{{$pre->slug}}" >
                {{$pre->category->name}} {{$pre->getTranslatedAttribute('model',App::GetLocale(), 'fallbackLocale')}} 
                 </a>
+=======
+    <div class="product-cardbox">
+        <div class="image" style="background-image: url('{{Voyager::image($pre->thumbnail)}}')">
+         
+        </div>
+        <div class="content">
+            <p class="car-title">
+               {{$pre->category->name}} {{$pre->model}}
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
             </p>
             <p class="car-year">
                 {{$pre->year}} year

@@ -8,9 +8,13 @@ use App\Http\Resources\PageResource;
 use App\Seo;
 use App\Models\Car;
 use App\Location;
+<<<<<<< HEAD
 use App\Letter;
 use App\Models\Brand;
 use App\Slider;
+=======
+use App\Models\Brand;
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
 use App;
 class PagesController extends Controller
 {
@@ -29,7 +33,11 @@ class PagesController extends Controller
         }
     }
     public function getCarData($parameter){
+<<<<<<< HEAD
         return Car::where('slug', $parameter)->withTranslations()->first();
+=======
+        return Car::where('slug', $parameter)->first();
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     }
     
     public function getCars($parameter){
@@ -50,6 +58,7 @@ class PagesController extends Controller
         return  Car::where('class', 'premium')->withTranslations()->get();
     }
     public function getClassThree(){
+<<<<<<< HEAD
         return  Car::where('class', 'bandm')->withTranslations()->get();
     }
     public function getClassFour(){
@@ -71,6 +80,15 @@ class PagesController extends Controller
                 return $data->slug_ru;
             }    
            
+=======
+        return  Car::where('class', 'econom')->withTranslations()->get();
+    }
+    public function getClassFour(){
+        return  Car::where('class', 'econom')->withTranslations()->get();
+    }
+    public function getClassFive(){
+        return  Car::where('class', 'econom')->withTranslations()->get();
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     }
     public function getPage($slug,$carslug = null){
         $lang = App::getlocale();
@@ -83,6 +101,7 @@ class PagesController extends Controller
         if($lang == "ru"){
             $page = Seo::where("slug_ru", $slug)->first();
         }
+<<<<<<< HEAD
          if($slug = ""){
              $page = Seo::first();
          }
@@ -95,12 +114,19 @@ class PagesController extends Controller
              $dynamicClass = Car::where('class', $singleCar->class)->get(); 
          }
       
+=======
+        
+        $singleCar = $this->getCarData($carslug);
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
         $cars = $this->getCars($carslug);
         $carseo = $this->getSingleCarPage($lang);
         $locations = $this->getLocations();
         $econom = $this->getClassOne();
         $premium = $this->getClassTwo();
+<<<<<<< HEAD
         $business = $this->getClassFive();
+=======
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
         $view = $page->viewname;
         $sliders = Slider::orderby('id', 'ASC')->get();
         $brands = Brand::get();
@@ -108,6 +134,7 @@ class PagesController extends Controller
         $seos = Seo::orderby('id')->where('featured',1)->get();
         $pagescollection = PageResource::collection($seos);
         $pagess = $pagescollection->toArray($seos);
+<<<<<<< HEAD
         return   view('Front.'.$view,)->with([
                 'pagess'=> $pagess, 
                 'page'=>$page, 
@@ -136,5 +163,17 @@ class PagesController extends Controller
     }
     public  function Locations(){
         return json_encode(Location::select('coordinat')->get(), JSON_INVALID_UTF8_IGNORE);
+=======
+        return  view('Front.'.$view,)->with([
+                'pagess'=> $pagess, 
+                'page'=>$page, 
+                'car' => $singleCar, 
+                'cars' =>$cars, 
+                'carseo' => $carseo, 
+                'locations'=>$locations, 
+                'econom'=>$econom,
+                'premium' =>$premium
+            ]);
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     }
 }

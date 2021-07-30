@@ -65,12 +65,20 @@
             rel="stylesheet"
             />
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<<<<<<< HEAD
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
   
+=======
+            <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          />
+
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
         <script src="{{asset('front/assets/show-hide-text.js')}}"></script>
 
     </head>
@@ -78,7 +86,11 @@
     @include('Front.Widgets.nav-homepage')
     @else
     @include('Front.Widgets.nav')
+<<<<<<< HEAD
     @endif
    <style>
     
    </style>
+=======
+    @endif
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539

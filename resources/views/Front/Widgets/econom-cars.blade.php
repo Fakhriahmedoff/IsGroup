@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @foreach ($econom as $i=>$eco)
 <li class="splide__slide" >
@@ -33,6 +34,23 @@
             </p>
             <p class="car-price">
                 {{$eco->price}} AZN / day 
+=======
+@foreach ($econom as $eco)
+<li class="splide__slide" >
+    <div class="product-cardbox" data-aos="fade-right">
+        <div class="image" style="background-image: url('{{Voyager::image($eco->thumbnail)}}')">
+         
+        </div>
+        <div class="content">
+            <p class="car-title">
+               {{$eco->category->name}} {{$eco->model}}
+            </p>
+            <p class="car-year">
+                {{$eco->year}} year
+            </p>
+            <p class="car-price">
+                {{$eco->price}} AZN / day
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
             </p>
             <a href="/{{App::getLocale()}}/{{$carseo}}/{{$eco->slug}}" class="btn primary-action-button">
                 @lang('translate.rent-button')

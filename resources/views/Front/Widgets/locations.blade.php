@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 @foreach ($locations as $location)
@@ -13,10 +14,15 @@ $variki = $var[0];
 $variki['lat'];
 @endphp
 <div data-lng="{{$variki['lng']}}" data-lat="{{$variki['lat']}}" class="location-card">
+=======
+@foreach ($locations as $location)
+<div class="location-card">
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     <img src="/front/images/locationicon.png" alt="">
     <p class="text">
         {{$location->getTranslatedAttribute('name',App::GetLocale(), 'en')}}
     </p>
+<<<<<<< HEAD
   
    
 </div>
@@ -78,3 +84,7 @@ $variki['lat'];
   }
   </script>
   
+=======
+</div>
+@endforeach
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539

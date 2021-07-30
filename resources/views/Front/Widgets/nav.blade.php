@@ -37,9 +37,15 @@
                         </div>
                         <li class="nav-item lang">
                             <ul>
+<<<<<<< HEAD
                                 <li><a class="nav-link" href="/az/{{$page->slug_az}}@if($car)/{{$car->slug}} @endif ">AZ</a></li>
                                 <li><a class="nav-link" href="/en/{{$page->slug_en}}@if($car)/{{$car->slug}} @endif ">EN</a></li>
                                 <li><a class="nav-link" href="/ru/{{$page->slug_ru}}@if($car)/{{$car->slug}}  @endif">RU</a></li>
+=======
+                                <li><a class="nav-link" href="/az/{{$page->slug_az}}@if(!$car == null)/{{$car->slug}} @endif ">AZ</a></li>
+                                <li><a class="nav-link" href="/en/{{$page->slug_en}}@if(!$car == null)/{{$car->slug}} @endif ">EN</a></li>
+                                <li><a class="nav-link" href="/ru/{{$page->slug_ru}}@if(!$car == null)/{{$car->slug}}  @endif">RU</a></li>
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                             </ul>
 
                         </li>

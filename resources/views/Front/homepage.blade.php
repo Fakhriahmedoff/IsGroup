@@ -11,6 +11,7 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
     <div class="swiper-container homepage home-swiper" id="home-swiper">
         <div class="swipe-context"></div>
         <div class="swiper-wrapper">
+<<<<<<< HEAD
             @foreach($sliders as $slider)
             <div class="swiper-slide" data-slide="{{$slider->id}}">
                 <div class="section-breadcrumb">
@@ -36,6 +37,28 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                                 <div class="col-md-10">
                                     <img alt="{{$getkeyword}}" data-slideimg="{{$slider->id}}" class="img{{$slider->id}}" id="img" src="{{ Voyager::image($slider->image)}}" alt="">
                                 </div>
+=======
+            <div class="swiper-slide" >
+                <div class="section-breadcrumb">
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <h1 class="main-title">CHEVROLET AVEO</h1>
+                            <h1 class="main-title-below">45 AZN / day</h1>
+                            <a class="main-button hover-6" href="#">
+                                <span>Rent it now!</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 animate__animated animate__fadeInRight">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="/front/images/s3.png" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="position">
+                                    </div>
+                                </div>
+                               
                                 <div class="col-md-2">
                                     <ul class="social-links">
                                         <li><a href="#" class="instagram">
@@ -64,8 +87,118 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="swiper-slide" >
+                <div class="section-breadcrumb">
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <h1 class="main-title">CHEVROLET AVEO</h1>
+                            <h1 class="main-title-below">45 AZN / day</h1>
+                            <a class="main-button hover-6" href="#">
+                                <span>Rent it now!</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 animate__animated animate__fadeInRight" >
+                            <div class="row">
+                                <div class="col-md-6"  >
+                                    <img src="/front/images/s4.png" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="position">
+                                    </div>
+                                </div>
+                               
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
+                                <div class="col-md-2">
+                                    <ul class="social-links">
+                                        <li><a href="#" class="instagram">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/instagram_white.svg">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/instagram_gold.svg">
+                                            </a></li>
+                                        <li><a href="#" class="whatsapp">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/whatsapp_white.svg">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/whatsapp_gold.svg">
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="facebook">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/facebook_white.svg">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/facebook_gold.svg">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<<<<<<< HEAD
             </div>           
             @endforeach
+=======
+            </div>
+            <div class="swiper-slide" >
+                <div class="section-breadcrumb">
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <h1 class="main-title">CHEVROLET AVEO</h1>
+                            <h1 class="main-title-below">45 AZN / day</h1>
+                            <a class="main-button hover-6" href="#">
+                                <span>Rent it now!</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 animate__animated animate__fadeInRight">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img data-aos="fade-left" src="/front/images/s3.png" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="position">
+                                    </div>
+                                </div>
+                               
+                                <div class="col-md-2">
+                                    <ul class="social-links">
+                                        <li><a href="#" class="instagram">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/instagram_white.svg">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/instagram_gold.svg">
+                                            </a></li>
+                                        <li><a href="#" class="whatsapp">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/whatsapp_white.svg">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/whatsapp_gold.svg">
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="facebook">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/facebook_white.svg">
+                                                <img
+                                                    srcs="http://huquqshunas.testjed.me/images/facebook_gold.svg">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+     
+          
+
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
         </div>
                               
         <!-- Add Pagination -->
@@ -74,8 +207,12 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
       <div  value="Click" class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
+<<<<<<< HEAD
     @include('Front.Widgets.classes')
 
+=======
+<div class="divider-sm"></div>
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     <div class="satisfaction-container-wrapper  ">
         <div class="container satisification">
             <div class="row text-center justify-content-center">
@@ -84,6 +221,7 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                     Rent a Car Baku, Azerbaijan
                 </h1>
             </div>
+<<<<<<< HEAD
             <div class="row stats" data-aos="fade-up">
                 <div class="tire"></div>
                 <div class="col-lg-6">
@@ -92,6 +230,16 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                         Car rental oportunity from the biggest car brands in Baku with best conditions. Easy and fast booking with “Ram Sevis “– Rent a Car Baku trough Azerbaijan.
                     </p>
                 </div> 
+=======
+            <div class="row stats">
+                <div class="tire"></div>
+                <div class="col-lg-6">
+                    <img src="/front/images/mercedes.png" data-aos="fade-right" alt="">
+                    <p class="stat-text" data-aos="fade-up">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    </p>
+                </div>
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                 <div class="col-lg-6">
                     <div class="holder">
                         <div class="content" data-aos="fade-left">
@@ -109,7 +257,11 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                             90+
                         </p>
                         <p class="text">
+<<<<<<< HEAD
                             more cars for rent
+=======
+                            more cars
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                         </p>
                     </div>
                     </div>
@@ -129,6 +281,12 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
+  @include('Front.Widgets.classes')
+
+
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     <div class="car-class-wrapper">
         <div class="container">
             <div class="row title-holder text-center
@@ -147,6 +305,11 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
         <div class="splide__track">
             <ul class="splide__list">
               @include('Front.Widgets.econom-cars')
+<<<<<<< HEAD
+=======
+                
+
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
             </ul>
             <br>
             <a href="/{{App::getLocale()}}/{{PagesController::getLink(336)}}" class="more-action-button">
@@ -213,7 +376,12 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
     <div class="splide products-slider" id="splide2">
         <div class="splide__track">
             <ul class="splide__list">
+<<<<<<< HEAD
                 @include('Front.Widgets.business-cars')
+=======
+                @include('Front.Widgets.econom-cars')
+
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
             </ul>
             <br>
             <a href="/{{App::getLocale()}}/{{PagesController::getLink(2)}}" class="more-action-button">
@@ -228,7 +396,35 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
         <div class="container">
             <div class="row title-holder text-center
                 justify-content-center">
+<<<<<<< HEAD
                 <h1 class="title-text" data-aos="fade-up">
+=======
+                <h1 class="title-text">
+                    Rent a Car: Premium Class
+                </h1>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="splide products-slider" id="splide3">
+        <div class="splide__track">
+            <ul class="splide__list">
+                @include('Front.Widgets.premium-cars')
+            </ul>
+            <br>
+            <a href="#" class="more-action-button">
+                Show All
+            </a>
+        </div>
+    </div>
+    <div class="divider-lg"></div>
+    <div class="car-class-wrapper">
+        <div class="container">
+            <div class="row title-holder text-center
+                justify-content-center">
+                <h1 class="title-text">
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                     Advantages to Rent a Car from<br> Ram Servis
                 </h1>
             </div>
@@ -236,6 +432,7 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
         </div>
 
     </div>
+<<<<<<< HEAD
     <div class="advantages for-homepage" >
     
     <div class="container advantages for-homepage" >
@@ -247,33 +444,69 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                         More than 90 rental cars in our park
                     </p>
                     <img alt="{{$getkeyword2}}"  class="connetor-left animated"
+=======
+
+    <div class="container advantages" >
+        <div class="row">
+            <div class="col-lg-3">
+                <div data-aos="fade-right" class="benefit-card" >
+                    <img src="/front/images/car_cars.png" alt="">
+                    <p  class="content">
+                        More than 90 cars in our park
+                    </p>
+                    <img  class="connetor-left animated"
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                         src="/front/images/connector-top-left.png" alt="">
                 </div>
                 <div class="divider-md"></div>
                 <div data-aos="fade-right" class="benefit-card" >
+<<<<<<< HEAD
                     <img alt="{{$getkeyword}}" src="/front/images/cash_cars.png" alt="">
                     <p  class="content">
                         Affordable prices to rent a car
                     </p>
                     <img alt="{{$getkeyword2}}" class="connetor-left animated middle-connector"
+=======
+                    <img src="/front/images/cash_cars.png" alt="">
+                    <p  class="content">
+                        Affordable prices to rent a car
+                    </p>
+                    <img class="connetor-left animated middle-connector"
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                         src="/front/images/connector-middle-left.png" alt="">
                 </div>
                 <div class="divider-md"></div>
                 <div data-aos="fade-right" class="benefit-card" >
+<<<<<<< HEAD
                     <img alt="{{$getkeyword}}" src="/front/images/man_cars.png" alt="">
                     <p  class="content">
                         Qualified and caring staff
                     </p>
                     <img alt="{{$getkeyword2}}" class="connetor-left animated bottom-connector"
+=======
+                    <img src="/front/images/man_cars.png" alt="">
+                    <p  class="content">
+                        Qualified and caring staff
+                    </p>
+                    <img class="connetor-left animated bottom-connector"
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                         src="/front/images/connector-bottom-left.png" alt="">
                 </div>
             </div>
             <div data-aos="fade-up" class="col-lg-6 middle">
+<<<<<<< HEAD
                 <img alt="{{$getkeyword}}" src="/front/images/middlecar.png" alt="">
             </div>
             <div class="col-lg-3">
                 <div data-aos="fade-left" class="benefit-card">
                     <img alt="{{$getkeyword}}" src="/front/images/speedo.png" alt="">
+=======
+                <img src="/front/images/middlecar.png" alt="">
+            </div>
+            <div class="col-lg-3">
+                <div data-aos="fade-left" class="benefit-card">
+                    <img src="/front/images/speedo.png" alt="">
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                     <p class="content">
                         Low milage on all our rental cars
                     </p>
@@ -282,7 +515,11 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                 </div>
                 <div class="divider-md"></div>
                 <div data-aos="fade-left" class="benefit-card">
+<<<<<<< HEAD
                     <img alt="{{$getkeyword}}" src="/front/images/loc_cars.png" alt="">
+=======
+                    <img src="/front/images/loc_cars.png" alt="">
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                     <p class="content">
                         We deliver a car to your location
                     </p>
@@ -291,7 +528,11 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                 </div>
                 <div class="divider-md"></div>
                 <div data-aos="fade-left" class="benefit-card">
+<<<<<<< HEAD
                     <img alt="{{$getkeyword}}" src="/front/images/sec_cars.png" alt="">
+=======
+                    <img src="/front/images/sec_cars.png" alt="">
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                     <p class="content">
                         All our cars are fully insured
                     </p>
@@ -306,6 +547,7 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
         </p>
     </div>
     <div class="divider-lg"></div>
+<<<<<<< HEAD
 </div>
 
     <div class="car-class-wrapper">
@@ -334,11 +576,14 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
     </div>
   
     <div class="divider-lg"></div>
+=======
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     <div class="divider-lg"></div>
     <div class="cta-wrapper">
         <div class="container call-to-action">
             <div class="row">
                 <div class="col-md-6 text-right">
+<<<<<<< HEAD
                   <img alt="{{$getkeyword2}}" data-aos="fade-right"  src="/front/images/left_mercedes.png" width="89%" alt="">
                   <p class="text1"  data-aos="fade-up">Rent a car in Baku in just a few minutes</p>
                   <p class="text1"  data-aos="fade-up">Arrive at your destination in a comfortable and convenient environment - in a stylish executive rental car </p>
@@ -358,6 +603,23 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                   </form>
                   
                                    </div>
+=======
+                  <img data-aos="fade-right"  src="/front/images/left_mercedes.png" width="89%" alt="">
+                  <p class="text1"  data-aos="fade-up">Lorem ipsum dolor sit amet</p>
+                  <p class="text1"  data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="col-md-6">
+                  <h1 class="title2"  data-aos="fade-left">Lorem ipsum dolor sit amet</h1>
+                  <p class="subTitle2"  data-aos="fade-left">Lorem ipsum dolor sit  amet consectetur adipisicing elit amet consectetur adipisicing elit.</p>
+                  <div class="divider-sm"></div>
+                  <div class="content" data-aos="fade-left">
+                        <input type="text" placeholder="Adınız" class="cta-input">
+                        <input type="text" placeholder="Email Adresiniz" class="cta-input">
+                    </div>
+                    <div class="divider-sm"></div>
+                    <a href="#!" class="btn primary-action-button" data-aos="fade-up"> Müraciət Et! </a>
+                </div>
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
             </div>
           
         </div>
@@ -365,7 +627,11 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
         <div class="divider-sm"></div>
     </div>
 
+<<<<<<< HEAD
     <div class="car-class-wrapper feedback" >
+=======
+    <div class="car-class-wrapper feedback">
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
         <div class="container">
             <div class="row title-holder text-center
                 justify-content-center">
@@ -398,6 +664,7 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
 
         </div>
     </div>
+<<<<<<< HEAD
 
     <div class="cta-wrapper">
         <div class="container call-to-action">
@@ -453,6 +720,10 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
         <div class="divider-sm"></div>
         <div class="divider-sm"></div>
     </div>
+=======
+    <div class="divider-md"></div>
+    
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
 
     <div class="car-class-wrapper locations">
         <div class="container">
@@ -465,6 +736,7 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
                     You can rent a car from these locations or we will deliver car to your location
                 </h3>
             </div>
+<<<<<<< HEAD
             <div class="row locs" data-aos="fade-up">
                 <div class="tire-for-one" ></div>
                 <div class="tire-for-two" ></div>
@@ -489,6 +761,13 @@ $getkeyword2 =  $keyword[array_rand($keyword)];
              
                
                 @endforeach     
+=======
+            <div class="row">
+                <div class="tire-for-one" ></div>
+                <div class="tire-for-two" ></div>
+               @include('Front.Widgets.locations')
+                
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
             </div>
         </div>
         <div class="divider-md">

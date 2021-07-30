@@ -27,6 +27,7 @@
             @method('post')
   
         <div class="form-wrapper">
+<<<<<<< HEAD
             <div  class="rent-form-online">
                 <img src="/front/images/logo.svg" alt="" class="ram-logo-for-online">
                 <div id="carcard">
@@ -75,6 +76,25 @@
                 <input placeholder="Phone*" type="text" name="phone" required class="width-sm rent-input">
                 <input placeholder="Email" value="@if(Request::has('email')) {{Request::input('email')}} @endif" type="text" name="email" required class="width-sm rent-input">
                 <textarea  placeholder="Any other suggestions" name="suggestions" id="" class="width-lg rent-textarea" cols="30" rows="10"></textarea>
+=======
+            <form action="" class="rent-form-online">
+                
+                <select placeholder="Car brand" type="text" class="width-md rent-input">
+                    <option value="1">option1</option>
+                </select>
+                <select placeholder="Car brand" type="text" class="width-md rent-input">
+                    <option value="1">option1</option>
+                </select>
+                <select placeholder="Car brand" type="text" class="width-lg rent-input">
+                    <option value="1">option1</option>
+                </select>
+                <input placeholder="Car brand" type="datetime" class="datetime rent-input">
+                <input placeholder="Car brand" type="datetime" class="datetime rent-input">
+                <input placeholder="Name, Surname*" type="text" class="width-sm rent-input">
+                <input placeholder="Phone*" type="text" class="width-sm rent-input">
+                <input placeholder="Email" type="text" class="width-sm rent-input">
+                <textarea  placeholder="Any other suggestions" name="" id="" class="width-lg rent-textarea" cols="30" rows="10"></textarea>
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
                </form>
         </div>
         <div class="divider-sm"></div>

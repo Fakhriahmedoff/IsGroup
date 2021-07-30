@@ -113,12 +113,17 @@
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
     <!-- MDB -->
     <script
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<<<<<<< HEAD
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
   
@@ -129,6 +134,10 @@
         <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.umd.js" integrity="sha256-JWngAnuoE3OJuugo7v9bF5ceRUJpa/xKKsHjgWl4ABA=" crossorigin="anonymous"></script>
 
          <script>
+=======
+
+        <script>
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
             AOS.init();
           </script>
         <script>
@@ -260,6 +269,7 @@ $(document).ready(function () {
     <script>
 
  var swiper = new Swiper("#home-swiper", {
+<<<<<<< HEAD
         effect: 'fade',
     fadeEffect: {
         crossFade: true
@@ -297,6 +307,21 @@ $(document).ready(function () {
 
 	
 	
+=======
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+>>>>>>> 8f145f55e9293620dc0d27cc7dfc16f91cc86539
 
 var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
